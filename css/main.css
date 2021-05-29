@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+section {
+    display: flex;
+}
+
+.snake-cell {
+    display: flex;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+.snake-cell img {
+    margin: auto;
+}
+
+.snake-head {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.snake-body {
+    background-color: greenyellow;
+}
+
+#snake-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.snake-wrapper {
+    display: flex;
+    margin: auto;
+}
+
+.controls {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.controls button {
+    width: 115px;
+    color: #7AA263;
+    background-color: #fff;
+    border: 2px solid #7AA263;
+    padding: 10px;
+}
+
+.controls .label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.controls select {
+    width: 100px;
+    padding: 5px;
+}
+
+#message, span.score {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.crashed {
+    background-color: red;
+    border-radius: 10px;
+}
+
+#stacked-state {
+    margin-bottom: 25px;
+}

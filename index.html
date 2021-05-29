@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/snake.js"></script>
+</head>
+<body>
+    <h1 id="snake-message">Welcome to Snake !</h1>
+    <span id="snake-score">Score: <b> 0 </b></span>
+    <section>
+        <div class="snake-wrapper">
+            <div id="snake-container">
+            </div>
+            <div class="controls">
+                <form id="snake-controls-form">
+                    <label>
+                        <span class="label">Speed</span>
+                        <select id="stacked-state" name="speed">
+                            <option value="600">Small</option>
+                            <option value="300">Medium</option>
+                            <option value="200">Fast</option>
+                            <option value="100">Faster</option>
+                            <option value="50">Extra</option>
+                        </select>
+                        <span class="label">No wall mode</span>
+                        <select id="no-wall-mode" name="wall">
+                            <option value="true">Yes</option>
+                            <option value="false">No</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span class="label"> ... </span>
+                    </label>
+                </form>
+                <button id="snake-start-game" class="ui green basic button">Start Game</button>
+                <button style="display: none;" id="snake-end-game" class="ui red basic button">End Game</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
